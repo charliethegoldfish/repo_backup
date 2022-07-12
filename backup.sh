@@ -10,6 +10,9 @@
 # Loop through repo list
 # If not checked out, check out
 # If checked out, pull down latest
+while IFS= read -r line; do
+    echo "Text read from file: $line"
+done < repos.txt
 
 # Wait for x time before checking if there is new stuff to pull down
 
